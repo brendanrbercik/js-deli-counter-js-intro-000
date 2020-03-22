@@ -17,7 +17,7 @@ function currentLine (line) {
   var currentList = [];
 
   for (let i = 0; i < line.length; i++) {
-    currentList.push(`${i+=1}: ${list[i]}`);
+    currentList.push(`${i+=1}: ${line[i]}`);
     return("The line is currently: ${currentList}");
   }
 
