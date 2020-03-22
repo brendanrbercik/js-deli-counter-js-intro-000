@@ -5,7 +5,7 @@ function takeANumber (line, name) {
   return "Welcome, " + name + ". You are number " + line.length + " in line.";
 }
 
-function nowServing (line, i) {
+function nowServing (line) {
   while (line.length > 0) {
     return(`Currently serving ${line.shift()}.`);
   }
@@ -14,9 +14,9 @@ function nowServing (line, i) {
 
 
 function currentLine (line) {
-
   do {
     return ("The line is currently empty.");
   } while (line.length === 0);
 
+  return("The line is currently: ")
   }
