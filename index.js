@@ -18,10 +18,11 @@ function currentLine (line) {
     return ("The line is currently empty.");
   } while (line.length === 0);
 
-var currentList = [];
+  var currentList = [];
 
   for (let i = 0; i < line.length; i++) {
     currentList.push(`${i+=1}: ${list[i]}`);
+    return("The line is currently: ${currentList}");
   }
-  return("The line is currently: ${currentList}");
+
   }
