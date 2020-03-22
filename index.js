@@ -16,9 +16,13 @@ function nowServing (line) {
 function currentLine (line) {
   var currentList = [];
 
+  while (line.length > 0) {
   for (let i = 0; i < line.length; i+=1) {
     currentList.push(` ${i+1}. ${line[i]}`);
   }
   return("The line is currently:" + currentList);
+  }
+
+  return("The line is currently empty.");
 
   }
